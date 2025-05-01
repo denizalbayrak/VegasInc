@@ -46,4 +46,5 @@ HTML5
 **🐈 About the Cat**
 
 Vegas is a real cat who naps like royalty and has strong opinions about street food and ancient ruins. This site is his tribute.
+
 ![WhatsApp Image 2025-04-12 at 19 36 20 (2)](https://github.com/user-attachments/assets/d02d680c-f71c-480e-8334-ca5c60fd47cd)
