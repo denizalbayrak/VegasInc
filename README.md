@@ -11,13 +11,13 @@ This project is currently under active development and is being built entirely u
 
 **✨ Project Goals**
 
-Practice DOM manipulation, animations, and layout techniques using Vanilla JS
+-Practice DOM manipulation, animations, and layout techniques using Vanilla JS
 
-Create a multi-section, visually engaging website inspired by Izmir and a real cat named Vegas
+-Create a multi-section, visually engaging website inspired by Izmir and a real cat named Vegas
 
-Build reusable UI components (cards, buttons, sections)
+-Build reusable UI components (cards, buttons, sections)
 
-Implement navigation and scroll-based interactivity
+-Implement navigation and scroll-based interactivity
 
 **📚 Key Features (planned)**
 
@@ -37,11 +37,11 @@ Implement navigation and scroll-based interactivity
 
 HTML5
 
-CSS3 (custom responsive styles)
+-CSS3 (custom responsive styles)
 
-Vanilla JavaScript (no frameworks)
+-Vanilla JavaScript (no frameworks)
 
-Visual design inspired by retro tourism posters + cat energy 🐱
+-Visual design inspired by retro tourism posters + cat energy 🐱
 
 **🐈 About the Cat**
 
