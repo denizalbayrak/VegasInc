@@ -15,9 +15,16 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body .home-page-container {
   font-family: 'Poppins', sans-serif;
   background-color: hsla(120, 100%, 84%, 0.915);
+  color: #333;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+body .eatdrink-page-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsla(120, 100%, 100%, 0.915);
   color: #333;
   line-height: 1.5;
   font-size: 0.875rem;
@@ -146,8 +153,15 @@ Scroll
 ===============
 */
 /* navbar */
-nav {
+.home-page nav {
   background: #fff;
+  padding: 1rem 1.5rem;
+  z-index: 3;
+}
+.eat-page nav,
+.explore-page nav,
+.plan-page nav {
+  background: #2d0000;
   padding: 1rem 1.5rem;
   z-index: 3;
 }
@@ -155,6 +169,7 @@ nav {
 .fixed-nav .site-title {
   color: hsl(209, 61%, 16%);
 }
+
 .navbar .site-title,
 .site-title {
   color: #fff;
@@ -258,7 +273,7 @@ nav {
   }
 }
 /* hero */
-header {
+.hero-header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
     url(./hero-bcg.jpeg) center/cover no-repeat;
@@ -570,7 +585,11 @@ footer p {
 .card4 {
   border-color: #9a00ff;
 }
-
+.filter-btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (min-width: 992px) {
   .section-center {

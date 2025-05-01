@@ -13,144 +13,169 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <img src="./logo.png" class="logo" alt="logo" />
-            <h3 class="site-title">VEGAS INC</h3>
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
+  <body class="home-page">
+    <div class="home-page-container">
+      <header id="home" class="hero-header">
+        <!-- navbar -->
+        <nav id="nav">
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <img src="./logo.png" class="logo" alt="logo" />
+              <h3 class="site-title">VEGAS INC</h3>
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <div class="links-container">
+              <ul class="links">
+                <li>
+                  <a href="#home" class="scroll-link">home</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">About Me</a>
+                </li>
+                <li>
+                  <a href="#explore" class="scroll-link">Explore</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links">
-              <li>
-                <a href="#home" class="scroll-link">home</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">About Me</a>
-              </li>
-              <li>
-                <a href="#explore" class="scroll-link">Explore</a>
-              </li>
-            </ul>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+          <div class="container">
+            <h1>Welcome to Izmir, baby!</h1>
+            <p>
+              I'm Vegas, the sassiest feline this side of the Aegean. I nap on
+              ancient ruins, sunbathe on seaside benches, and know every corner
+              of this city better than your GPS. Follow my paw prints — and I’ll
+              show you Izmir like you’ve never seen it before.
+            </p>
+            <a href="#explore" class="scroll-link btn btn-white"
+              >Let’s Explore 🐾</a
+            >
           </div>
         </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner">
-        <div class="container">
-          <h1>Welcome to Izmir, baby!</h1>
-          <p>
-            I'm Vegas, the sassiest feline this side of the Aegean. I nap on
-            ancient ruins, sunbathe on seaside benches, and know every corner of
-            this city better than your GPS. Follow my paw prints — and I’ll show
-            you Izmir like you’ve never seen it before.
-          </p>
-          <a href="#explore" class="scroll-link btn btn-white"
-            >Let’s Explore 🐾</a
-          >
+      </header>
+      <!-- about -->
+      <section id="about" class="section">
+        <div class="background-layer">
+          <div class="sky">
+            <img src="./assets/cloud1.png" class="cloud cloud1" alt="cloud" />
+            <img src="./assets/cloud2.png" class="cloud cloud2" alt="cloud" />
+            <img src="./assets/cloud3.png" class="cloud cloud3" alt="cloud" />
+          </div>
+
+          <div class="grass"></div>
         </div>
-      </div>
-    </header>
-    <!-- about -->
-    <section id="about" class="section">
-      <div class="background-layer">
-        <div class="sky">
-          <img src="./assets/cloud1.png" class="cloud cloud1"  alt="cloud" />
-          <img src="./assets/cloud2.png" class="cloud cloud2"  alt="cloud" />
-          <img src="./assets/cloud3.png" class="cloud cloud3" alt="cloud" />
+        <div class="title">
+          <h2>Who’s This <span>Cool Cat?</span></h2>
         </div>
-      
-        <div class="grass"></div>
-      </div>
-      <div class="title">
-        <h2>Who’s This <span>Cool Cat?</span></h2>
-      </div>     
-      <div class="about-center section-center">
-        <div class="about-boxes left">
+        <div class="about-center section-center">
           <div class="about-boxes left">
-            <div class="about-box Left1">
-              <img src="./assets/clocktower.PNG" alt="Grew Up in Izmir" class="about-icon" />
-              <h4>Grew Up in Izmir</h4>
-              <p>I was born and raised in Izmir, a beautiful city by the Aegean coast.</p>
+            <div class="about-boxes left">
+              <div class="about-box Left1">
+                <img
+                  src="./assets/clocktower.PNG"
+                  alt="Grew Up in Izmir"
+                  class="about-icon"
+                />
+                <h4>Grew Up in Izmir</h4>
+                <p>
+                  I was born and raised in Izmir, a beautiful city by the Aegean
+                  coast.
+                </p>
+              </div>
+              <div class="about-box Left2">
+                <img
+                  src="./assets/pizzaLogo.png"
+                  alt="Foodie Furt"
+                  class="about-icon"
+                />
+                <h4>Foodie Furt</h4>
+                <p>I’ve got a soft spot for pizza, boyoz, and tasty treats.</p>
+              </div>
             </div>
-            <div class="about-box Left2">
-              <img src="./assets/pizzaLogo.png" alt="Foodie Furt" class="about-icon" />
-              <h4>Foodie Furt</h4>
-              <p>I’ve got a soft spot for pizza, boyoz, and tasty treats.</p>
+          </div>
+          <div class="vegas-box">
+            <img src="./assets/vegas.png" alt="Vegas Cat" class="about-img" />
+          </div>
+          <div class="about-boxes right">
+            <div class="about-box Right1">
+              <img
+                src="./assets/guide.PNG"
+                alt="Izmir Guide"
+                class="about-icon"
+              />
+              <h4>Izmir Guide</h4>
+              <p>
+                I know the city backwards and forwards and love sharing tips!
+              </p>
             </div>
-          </div>
-        </div>
-        <div class="vegas-box">
-          <img src="./assets/vegas.png" alt="Vegas Cat" class="about-img" />
-        </div>
-        <div class="about-boxes right">
-          <div class="about-box Right1">
-            <img src="./assets/guide.PNG" alt="Izmir Guide" class="about-icon" />
-            <h4>Izmir Guide</h4>
-            <p>I know the city backwards and forwards and love sharing tips!</p>
-          </div>
-          <div class="about-box Right2">
-            <img src="./assets/lugagge.PNG" alt="Lives Nine Lives" class="about-icon" />
-            <h4>Lives Nine Lives</h4>
-            <p>I’m all about new adventures and seizing the day!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="explore" class="section">
-      <div class="title">
-        <h2>Let’s <span>Explore 🐾</span></h2>
-      </div>
-      <section class="explore-options">
-        <div class="option-card card1">
-          <div class="card-header">Eat & Drink</div>
-          <div class="card-body">
-            <p>Discover cafes, desserts, street food and local dishes of İzmir!</p>
-            <a href="#" class="btn">Let's Eat 🍴</a>
-          </div>
-        </div>
-      
-        <div class="option-card card2">
-          <div class="card-header">Explore</div>
-          <div class="card-body">
-            <p>Find hidden corners, ancient ruins, and stunning sea views.</p>
-            <a href="#" class="btn">Explore 🧭</a>
-          </div>
-        </div>
-      
-        <div class="option-card card3">
-          <div class="card-header">Plan Your Day</div>
-          <div class="card-body">
-            <p>Need ideas? Let Vegas plan the purr-fect day for you!</p>
-            <a href="#" class="btn">Plan 🎒</a>
-          </div>
-        </div>
-      
-        <div class="option-card card4">
-          <div class="card-header">Coming Soon</div>
-          <div class="card-body">
-            <p>Something fun is coming soon. Stay tuned!</p>
-            <a href="#" class="btn">Stay Tuned ✨</a>
+            <div class="about-box Right2">
+              <img
+                src="./assets/lugagge.PNG"
+                alt="Lives Nine Lives"
+                class="about-icon"
+              />
+              <h4>Lives Nine Lives</h4>
+              <p>I’m all about new adventures and seizing the day!</p>
+            </div>
           </div>
         </div>
       </section>
-    </section>
-    <!-- footer -->
-    <footer class="section">
-      <p>
-        copyright &copy; Izmir’s waiting. I’ve sharpened my claws — and my
-        opinions.
-        <span id="date"></span>. all rights reserved Let’s go, hooman.
-      </p>
-    </footer>
+      <!-- contact -->
+      <section id="explore" class="section">
+        <div class="title">
+          <h2>Let’s <span>Explore 🐾</span></h2>
+        </div>
+        <section class="explore-options">
+          <div class="option-card card1">
+            <div class="card-header">Eat & Drink</div>
+            <div class="card-body">
+              <p>
+                Discover cafes, desserts, street food and local dishes of İzmir!
+              </p>
+              <a href="eatdrinks.html" class="btn">Let's Eat 🍴</a>
+            </div>
+          </div>
+
+          <div class="option-card card2">
+            <div class="card-header">Explore</div>
+            <div class="card-body">
+              <p>Find hidden corners, ancient ruins, and stunning sea views.</p>
+              <a href="#" class="btn">Explore 🧭</a>
+            </div>
+          </div>
+
+          <div class="option-card card3">
+            <div class="card-header">Plan Your Day</div>
+            <div class="card-body">
+              <p>Need ideas? Let Vegas plan the purr-fect day for you!</p>
+              <a href="#" class="btn">Plan 🎒</a>
+            </div>
+          </div>
+
+          <div class="option-card card4">
+            <div class="card-header">Coming Soon</div>
+            <div class="card-body">
+              <p>Something fun is coming soon. Stay tuned!</p>
+              <a href="#" class="btn">Stay Tuned ✨</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- footer -->
+      <footer class="section">
+        <p>
+          copyright &copy; Izmir’s waiting. I’ve sharpened my claws — and my
+          opinions.
+          <span id="date"></span>. all rights reserved Let’s go, hooman.
+        </p>
+      </footer>
+    </div>
     <a class="scroll-link top-link" href="#home">
       <i class="fas fa-arrow-up"></i>
     </a>
