@@ -2,7 +2,6 @@
 
 
 Welcome to Vegas Inc, the sassiest corner of the web, where a cat named Vegas guides you through the charming city of İzmir — in style.
-
 This site is part travel guide, part personal assistant, and 100% feline fabulous.
 ![Screenshot 2025-05-01 152933](https://github.com/user-attachments/assets/ef340a4d-02ce-44cb-803d-4afdcf9a6481)
 
