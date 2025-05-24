@@ -36,18 +36,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // switch the banner image based on the selected category
   function updateCategoryImage(category) {
     const img = document.getElementById("category-img");
-
+    // always show the “all” banner
     if (category === "all") {
       img.src = "./assets/all.png";
       img.alt = "All Categories";
       img.style.display = "block";
       return;
     }
-
-    img.src = `./assets/${category}.png`;
+    // make a slug: lowercase, replace spaces/slashes with hyphens
+    const slug = category
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/\//g, "-")
+      // if I have accents like “ğ”, normalize and strip diacritics:
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    img.src = `./assets/${slug}.png`;
     img.alt = category;
     img.style.display = "block";
   }
+  
 
   // apply search, category and price filters, then render
   function applyFilters() {
