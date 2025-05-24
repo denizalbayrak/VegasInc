@@ -1,0 +1,45 @@
+body .eatdrink-page-container {
+    background-color: hsla(120, 100%, 100%, 0.915);
+  }
+  .eatdrink-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .eatdrink-page-container footer.section {
+    margin-top: auto;
+  }
+  
+  .item-location {
+    font-size: 0.9rem;
+    color: var(--clr-accent);
+    margin: 0.25rem 0;
+  }
+  .section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .section-center {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo {
+    width: 100%;
+    height: 250px;       
+    object-fit: cover;    
+    object-position: center;
+    border-radius: 0.5rem; 
+  }
+  .btn.active {
+    background: var(--clr-primary);
+    color: #fff;
+  }

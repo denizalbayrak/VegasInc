@@ -27,7 +27,7 @@
 }
 #about {
   position: relative;
-  overflow: hidden; /* taşmaları gizle */
+  overflow: hidden;
 }
 .background-layer {
   position: absolute;
@@ -35,7 +35,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* içerikler üstünde olacak */
+  z-index: 0; 
 }
 
 .sky {
@@ -48,7 +48,7 @@
 .cloud {
   position: absolute;
   width: 80px;
-  height: 150px; /* yükseklik de sabit! */
+  height: 150px; 
   opacity: 0.7;
   object-fit: contain;
 
@@ -80,8 +80,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* kendi sütununda tam yayılabilir */
-  max-width: 500px; /* ama maksimum 250px genişleyebilir */
+  width: 100%; 
+  max-width: 500px; 
   margin: auto;
 }
 
@@ -99,8 +99,8 @@
   gap: 1rem;
 }
 .about-box {
-  width: clamp(180px, 20vw, 300px); /* 180px küçük ekran, 250px büyük ekran */
-  height: clamp(220px, 25vw, 280px); /* 220px küçük ekran, 300px büyük ekran */
+  width: clamp(180px, 20vw, 300px); 
+  height: clamp(220px, 25vw, 280px); 
 
   display: flex;
   flex-direction: column;

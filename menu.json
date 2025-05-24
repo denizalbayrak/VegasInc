@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Jungle Burger",
+      "category": "Burger",
+      "price": "$$$",
+      "img": "https://images.deliveryhero.io/image/fd-tr/Products/37110487.jpg?width=%s",
+      "location": "Bostanlı",
+      "desc": "Chiecken/Meat burgers, both perfecto."
+    },
+    {
+      "title": "Maxwell Burger",
+      "category": "Burger",
+      "price": "$$",
+      "img": "https://assets.dijital.menu/photos/maxwellburger/items/large/4eead34bfe8fe48c6e282586d91c0977.jpg",
+      "location": "Bornova",
+      "desc": "You should definitely try the chicken burger. I usually eat the Ranch Burger and I love the chicken shots."
+    },
+    {
+      "title": "Pizza Locale",
+      "category": "Pizza",
+      "price": "$$$$",
+      "img": "https://static.wixstatic.com/media/9e3562_bccb0196add74162ad006c31cc6c9b49~mv2.jpg/v1/fit/w_2500,h_1330,al_c/9e3562_bccb0196add74162ad006c31cc6c9b49~mv2.jpg",
+      "location": "İzmir",
+      "desc": "I wish it wasn't so expensive. My favorite is kavurma."
+    },
+    {
+      "title": "Dostlar Fırını Alsancak",
+      "category": "Breakfast",
+      "price": "$$",
+      "img": "https://images.deliveryhero.io/image/fd-tr/LH/as0y-listing.jpg",
+      "location": "Alsancak",
+      "desc": "The one with pastrami.. They are all very nice but this one.. In my dreams"
+    },
+    {
+      "title": "Coffee Nero Alsancak",
+      "category": "Coffee",
+      "price": "$$",
+      "img": "https://static.daktilo.com/sites/423/uploads/2023/01/07/caffe-nero-3jpg-1673109513.jpg",
+      "location": "Alsancak",
+      "desc": "Enjoying coffee with a view of the church."
+    },
+    {
+      "title": "Novella",
+      "category": "Dessert",
+      "price": "$$$",
+      "img": "https://cdn.kisikatesakademi.com.tr/image-cache/cache/post_content/https---cdn.kisikatesakademi.com.tr/editor-image/Lezzet%2520Avcisi/novella%25204.jpg",
+      "location": "Bostanlı",
+      "desc": "Ice creams based on seasonal fruits."
+    },
+    {
+      "title": "Guff",
+      "category": "Alcohol",
+      "price": "$$$",
+      "img": "https://guffcocktail.com/upload/Atomargarita_3_.jpg",
+      "location": "Bornova",
+      "desc": "Their cocktails are very nice."
+    },
+    {
+      "title": "Canım Ciğerim Mehmet Usta",
+      "category": "Döner-Kebaps",
+      "price": "$$$",
+      "img": "https://images.deliveryhero.io/image/fd-tr/Products/72103686.jpg?width=%s",
+      "location": "Bayraklı",
+      "desc": "The döner and lahmacun are very good."
+    }
+  ]

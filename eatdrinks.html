@@ -3,45 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eats&Drinks</title>
+    <title>Eats&amp;Drinks</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="eatdrinks.css" />
   </head>
   <body class="eat-page">
     <div class="eatdrink-page-container">
       <header id="eatdrink">
-        <!-- navbar -->
         <nav id="nav">
           <div class="nav-center eat-nav">
-            <!-- nav header -->
             <div class="nav-header">
               <img src="./logo.png" class="logo" alt="logo" />
               <h3 class="site-title">Vegas INC</h3>
             </div>
             <div class="nav-right">
-              <a  href="./index.html" class="home-btn">Home</a>
+              <a href="./index.html" class="home-btn">Home</a>
             </div>
           </div>
         </nav>
       </header>
+
       <section class="menu">
-        <!-- title -->
+        <!-- dynamic category banner: shown when matching image file exists -->
+        <div class="category-image">
+          <img
+            id="category-img"
+            src=""
+            alt=""
+            onerror="this.style.display='none'"
+          />
+        </div>
+
+        <!-- page title and underline decorative element -->
         <div class="title">
           <h2>Tastes of İzmir, Approved by Vegas</h2>
           <div class="underline"></div>
         </div>
-        <!-- filter buttons -->
+
+        <!-- buttons generated at runtime to filter by category -->
         <div class="filter-btn-container"></div>
-        <!-- menu items -->
+
+        <!-- text input to search items by title or location -->
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title or location…"
+          />
+        </div>
+
+        <!-- slider control to select maximum price level -->
+        <div class="slider-container">
+          <label for="price-range">Price:</label>
+          <input
+            type="range"
+            id="price-range"
+            min="1"
+            max="5"
+            step="1"
+            value="5"
+          />
+          <span id="price-value">5</span>
+        </div>
+
+        <!-- container where menu items will be injected -->
         <div class="section-center"></div>
       </section>
-      <!-- footer -->
+
       <footer class="section">
         <p>
           copyright &copy; Izmir’s waiting. I’ve sharpened my claws — and my
@@ -50,7 +83,8 @@
         </p>
       </footer>
     </div>
-    <!-- javascript -->
+
+    <!-- main script to fetch data, handle filters, search, slider and render UI -->
     <script src="eatdrinks.js"></script>
   </body>
 </html>
