@@ -62,7 +62,7 @@ img {
 }
 
 nav{
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   z-index: 3;
 }
 nav {
@@ -499,6 +499,50 @@ input[type="range"] {
   margin: 0 auto;              
   border-radius: var(--radius); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.lang-bar {
+  position: absolute;  
+  top: 0.5rem;
+  right: 2rem;
+  z-index: 1100;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.2em 0.7em;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.05);
+}
+
+
+.lang-btn {
+  background: #fff;
+  border: 1.5px solid #5eb1bf;
+  color: #333;
+  font-weight: 700;
+  padding: 0.1em 0.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: 
+    background 0.15s,
+    color 0.15s,
+    border 0.2s;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  background: #5eb1bf;
+  color: #fff;
+  border: 1.5px solid #2a1c01;
+}
+
+@media (max-width: 600px) {
+  .lang-bar {
+    top: 0.7rem;
+    right: 0.7rem;
+  }
+  .lang-btn { font-size: 0.95rem; }
 }
 @keyframes bounce {
   0% {

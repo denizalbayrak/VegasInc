@@ -5,7 +5,8 @@
       "price": "$$$",
       "img": "https://images.deliveryhero.io/image/fd-tr/Products/37110487.jpg?width=%s",
       "location": "Bostanlı",
-      "desc": "Chiecken/Meat burgers, both perfecto."
+      "desc_en": "Chiecken/Meat burgers, both perfecto.",
+      "desc_tr": "Tavuk/Et burgerleri, ikisi de mükemmel."
     },
     {
       "title": "Maxwell Burger",
@@ -13,7 +14,8 @@
       "price": "$$",
       "img": "https://assets.dijital.menu/photos/maxwellburger/items/large/4eead34bfe8fe48c6e282586d91c0977.jpg",
       "location": "Bornova",
-      "desc": "You should definitely try the chicken burger. I usually eat the Ranch Burger and I love the chicken shots."
+      "desc_en": "You should definitely try the chicken burger. I usually eat the Ranch Burger and I love the chicken shots.",
+      "desc_tr": "Tavuk burger'i mutlaka denemelisiniz. Ben genelde Ranch Burger yiyorum ve tavuk shot'larını çok seviyorum."
     },
     {
       "title": "Pizza Locale",
@@ -21,7 +23,8 @@
       "price": "$$$$",
       "img": "https://static.wixstatic.com/media/9e3562_bccb0196add74162ad006c31cc6c9b49~mv2.jpg/v1/fit/w_2500,h_1330,al_c/9e3562_bccb0196add74162ad006c31cc6c9b49~mv2.jpg",
       "location": "İzmir",
-      "desc": "I wish it wasn't so expensive. My favorite is kavurma."
+      "desc_en": "I wish it wasn't so expensive. My favorite is kavurma.",
+      "desc_tr": "Keşke bu kadar pahalı olmasaydı. En sevdiğim şarküteri pizza."
     },
     {
       "title": "Dostlar Fırını Alsancak",
@@ -29,7 +32,8 @@
       "price": "$$",
       "img": "https://images.deliveryhero.io/image/fd-tr/LH/as0y-listing.jpg",
       "location": "Alsancak",
-      "desc": "The one with pastrami.. They are all very nice but this one.. In my dreams"
+      "desc_en": "The one with pastrami.. They are all very nice but this one.. In my dreams",
+      "desc_tr": "Pastırmalı olan.. Hepsi çok güzel ama bu.. Rüyalarımda."
     },
     {
       "title": "Coffee Nero Alsancak",
@@ -37,7 +41,8 @@
       "price": "$$",
       "img": "https://static.daktilo.com/sites/423/uploads/2023/01/07/caffe-nero-3jpg-1673109513.jpg",
       "location": "Alsancak",
-      "desc": "Enjoying coffee with a view of the church."
+      "desc_en": "Enjoying coffee with a view of the church.",
+      "desc_tr": "Kilise manzarası eşliğinde kahve keyfi."
     },
     {
       "title": "Novella",
@@ -45,7 +50,8 @@
       "price": "$$$",
       "img": "https://cdn.kisikatesakademi.com.tr/image-cache/cache/post_content/https---cdn.kisikatesakademi.com.tr/editor-image/Lezzet%2520Avcisi/novella%25204.jpg",
       "location": "Bostanlı",
-      "desc": "Ice creams based on seasonal fruits."
+      "desc_en": "Ice creams based on seasonal fruits.",
+      "desc_tr": "Mevsim meyvelerinden yapılan dondurmalar."
     },
     {
       "title": "Guff",
@@ -53,7 +59,8 @@
       "price": "$$$",
       "img": "https://guffcocktail.com/upload/Atomargarita_3_.jpg",
       "location": "Bornova",
-      "desc": "Their cocktails are very nice."
+      "desc_en": "Their cocktails are very nice.",
+      "desc_tr": "Kokteylleri çok güzel."
     },
     {
       "title": "Canım Ciğerim Mehmet Usta",
@@ -61,6 +68,7 @@
       "price": "$$$",
       "img": "https://images.deliveryhero.io/image/fd-tr/Products/72103686.jpg?width=%s",
       "location": "Bayraklı",
-      "desc": "The döner and lahmacun are very good."
+      "desc_en": "The döner and lahmacun are very good.",
+      "desc_tr": "Döner ve lahmacun çok güzel."
     }
   ]

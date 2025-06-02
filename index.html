@@ -17,49 +17,47 @@
   <body class="home-page">
     <div class="home-page-container">
       <header id="home" class="hero-header">
+        <div class="lang-bar">
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
         <!-- navbar -->
         <nav id="nav">
           <div class="nav-center">
-            <!-- nav header -->
             <div class="nav-header">
               <img src="./logo.png" class="logo" alt="logo" />
-              <h3 class="site-title">VEGAS INC</h3>
+              <h3 class="site-title" data-i18n="siteTitle">VEGAS INC</h3>
               <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
               </button>
             </div>
-            <!-- links -->
             <div class="links-container">
               <ul class="links">
-                <li>
-                  <a href="#home" class="scroll-link">home</a>
-                </li>
-                <li>
-                  <a href="#about" class="scroll-link">About Me</a>
-                </li>
-                <li>
-                  <a href="#explore" class="scroll-link">Explore</a>
-                </li>
+                <li><a href="#home" class="scroll-link" data-i18n="navHome">home</a></li>
+                <li><a href="#about" class="scroll-link" data-i18n="navAbout">About Me</a></li>
+                <li><a href="#explore" class="scroll-link" data-i18n="navExplore">Explore</a></li>
               </ul>
-            </div>
+            </div>            
           </div>
         </nav>
+
         <!-- banner -->
         <div class="banner">
           <div class="container">
-            <h1>Welcome to Izmir, baby!</h1>
-            <p>
+            <h1 data-i18n="bannerTitle">Welcome to Izmir, baby!</h1>
+            <p data-i18n="bannerText">
               I'm Vegas, the sassiest feline this side of the Aegean. I nap on
               ancient ruins, sunbathe on seaside benches, and know every corner
               of this city better than your GPS. Follow my paw prints — and I’ll
               show you Izmir like you’ve never seen it before.
             </p>
-            <a href="#explore" class="scroll-link btn btn-white"
-              >Let’s Explore 🐾</a
-            >
+            <a href="#explore" class="scroll-link btn btn-white" data-i18n="bannerButton">
+              Let’s Explore 🐾
+            </a>
           </div>
         </div>
       </header>
+
       <!-- about -->
       <section id="about" class="section">
         <div class="background-layer">
@@ -68,41 +66,44 @@
             <img src="./assets/cloud2.png" class="cloud cloud2" alt="cloud" />
             <img src="./assets/cloud3.png" class="cloud cloud3" alt="cloud" />
           </div>
-
           <div class="grass"></div>
         </div>
+
         <div class="title">
-          <h2>Who’s This <span>Cool Cat?</span></h2>
+          <h2 data-i18n="aboutTitle">Who’s This <span data-i18n="highlight">Cool Cat?</span></h2>
         </div>
+
         <div class="about-center section-center">
           <div class="about-boxes left">
-            <div class="about-boxes left">
-              <div class="about-box Left1">
-                <img
-                  src="./assets/clocktower.PNG"
-                  alt="Grew Up in Izmir"
-                  class="about-icon"
-                />
-                <h4>Grew Up in Izmir</h4>
-                <p>
-                  I was born and raised in Izmir, a beautiful city by the Aegean
-                  coast.
-                </p>
-              </div>
-              <div class="about-box Left2">
-                <img
-                  src="./assets/pizzaicon.png"
-                  alt="Foodie Furt"
-                  class="about-icon"
-                />
-                <h4>Foodie Furt</h4>
-                <p>I’ve got a soft spot for pizza, boyoz, and tasty treats.</p>
-              </div>
+            <div class="about-box Left1">
+              <img
+                src="./assets/clocktower.PNG"
+                alt="Grew Up in Izmir"
+                class="about-icon"
+              />
+              <h4 data-i18n="aboutBox1Title">Grew Up in Izmir</h4>
+              <p data-i18n="aboutBox1Text">
+                I was born and raised in Izmir, a beautiful city by the Aegean
+                coast.
+              </p>
+            </div>
+            <div class="about-box Left2">
+              <img
+                src="./assets/pizzaicon.png"
+                alt="Foodie Furt"
+                class="about-icon"
+              />
+              <h4 data-i18n="aboutBox2Title">Foodie Furt</h4>
+              <p data-i18n="aboutBox2Text">
+                I’ve got a soft spot for pizza, boyoz, and tasty treats.
+              </p>
             </div>
           </div>
+
           <div class="vegas-box">
             <img src="./assets/vegas.png" alt="Vegas Cat" class="about-img" />
           </div>
+
           <div class="about-boxes right">
             <div class="about-box Right1">
               <img
@@ -110,8 +111,8 @@
                 alt="Izmir Guide"
                 class="about-icon"
               />
-              <h4>Izmir Guide</h4>
-              <p>
+              <h4 data-i18n="aboutBox3Title">Izmir Guide</h4>
+              <p data-i18n="aboutBox3Text">
                 I know the city backwards and forwards and love sharing tips!
               </p>
             </div>
@@ -121,66 +122,105 @@
                 alt="Lives Nine Lives"
                 class="about-icon"
               />
-              <h4>Lives Nine Lives</h4>
-              <p>I’m all about new adventures and seizing the day!</p>
+              <h4 data-i18n="aboutBox4Title">Lives Nine Lives</h4>
+              <p data-i18n="aboutBox4Text">
+                I’m all about new adventures and seizing the day!
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- contact -->
+
+      <!-- explore -->
       <section id="explore" class="section">
         <div class="title">
-          <h2>Let’s <span>Explore 🐾</span></h2>
+          <h2 data-i18n="exploreTitle">
+            Let’s <span data-i18n="highlightExplore">Explore 🐾</span>
+          </h2>
         </div>
         <section class="explore-options">
           <div class="option-card card1">
-            <div class="card-header">Eat & Drink</div>
+            <div class="card-header" data-i18n="card1Header">Eat & Drink</div>
             <div class="card-body">
-              <p>
+              <p data-i18n="card1Text">
                 Discover cafes, desserts, street food and local dishes of İzmir!
               </p>
-              <a href="eatdrinks.html" class="btn">Let's Eat 🍴</a>
+              <a href="eatdrinks.html" class="btn" data-i18n="card1Button">
+                Let's Eat 🍴
+              </a>
             </div>
           </div>
 
           <div class="option-card card2">
-            <div class="card-header">Explore</div>
+            <div class="card-header" data-i18n="card2Header">Explore</div>
             <div class="card-body">
-              <p>Find hidden corners, ancient ruins, and stunning sea views.</p>
-              <a href="#" class="btn">Explore 🧭</a>
+              <p data-i18n="card2Text">
+                Find hidden corners, ancient ruins, and stunning sea views.
+              </p>
+              <a href="#" class="btn" data-i18n="card2Button">
+                Explore 🧭
+              </a>
             </div>
           </div>
 
           <div class="option-card card3">
-            <div class="card-header">Plan Your Day</div>
+            <div class="card-header" data-i18n="card3Header">Plan Your Day</div>
             <div class="card-body">
-              <p>Need ideas? Let Vegas plan the purr-fect day for you!</p>
-              <a href="#" class="btn">Plan 🎒</a>
+              <p data-i18n="card3Text">
+                Need ideas? Let Vegas plan the purr-fect day for you!
+              </p>
+              <a href="#" class="btn" data-i18n="card3Button">
+                Plan 🎒
+              </a>
             </div>
           </div>
 
           <div class="option-card card4">
-            <div class="card-header">Coming Soon</div>
+            <div class="card-header" data-i18n="card4Header">Coming Soon</div>
             <div class="card-body">
-              <p>Something fun is coming soon. Stay tuned!</p>
-              <a href="#" class="btn">Stay Tuned ✨</a>
+              <p data-i18n="card4Text">
+                Something fun is coming soon. Stay tuned!
+              </p>
+              <a href="#" class="btn" data-i18n="card4Button">
+                Stay Tuned ✨
+              </a>
             </div>
           </div>
         </section>
       </section>
+
       <!-- footer -->
       <footer class="section">
-        <p>
-          copyright &copy; Izmir’s waiting. I’ve sharpened my claws — and my
-          opinions.
-          <span id="date"></span>. all rights reserved Let’s go, hooman.
+        <p data-i18n="footerText">
+          copyright &copy; Izmir’s waiting. I’ve sharpened my claws —
+          and my opinions. <span id="date"></span>. all rights reserved Let’s
+          go, hooman.
         </p>
       </footer>
     </div>
+
     <a class="scroll-link top-link" href="#home">
       <i class="fas fa-arrow-up"></i>
     </a>
-    <!-- javascript -->
+
+    <!-- translations dictionary -->
+    <script src="translations.js"></script>
+    <!-- i18n logic (defines setLanguage) -->
+    <script src="i18n.js"></script>
+    <!-- initialize language on load -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const langSelect = document.getElementById("lang-select");
+        const saved = localStorage.getItem("lang") || "tr";
+        langSelect.value = saved;
+        setLanguage(saved);
+        langSelect.addEventListener("change", (e) => {
+          localStorage.setItem("lang", e.target.value);
+          setLanguage(e.target.value);
+        });
+      });
+    </script>
+    <!-- page behavior (scroll, nav, etc.) -->
     <script src="app.js"></script>
   </body>
 </html>

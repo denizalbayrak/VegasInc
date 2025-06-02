@@ -15,21 +15,26 @@
   <body class="eat-page">
     <div class="eatdrink-page-container">
       <header id="eatdrink">
+        <div class="lang-bar">
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
         <nav id="nav">
           <div class="nav-center eat-nav">
             <div class="nav-header">
               <img src="./logo.png" class="logo" alt="logo" />
               <h3 class="site-title">Vegas INC</h3>
             </div>
-            <div class="nav-right">
-              <a href="./index.html" class="home-btn">Home</a>
+            <div class="nav-right">             
+              <!-- home link -->
+              <a href="./index.html" class="home-btn" data-i18n="home">Home</a>
             </div>
           </div>
         </nav>
       </header>
 
       <section class="menu">
-        <!-- dynamic category banner: shown when matching image file exists -->
+        <!-- show a banner image for the current category -->
         <div class="category-image">
           <img
             id="category-img"
@@ -39,27 +44,28 @@
           />
         </div>
 
-        <!-- page title and underline decorative element -->
+        <!-- page heading -->
         <div class="title">
-          <h2>Tastes of İzmir, Approved by Vegas</h2>
+          <h2 data-i18n="pageTitle">Tastes of İzmir, Approved by Vegas</h2>
           <div class="underline"></div>
         </div>
 
-        <!-- buttons generated at runtime to filter by category -->
+        <!-- category filter buttons -->
         <div class="filter-btn-container"></div>
 
-        <!-- text input to search items by title or location -->
+        <!-- search box -->
         <div class="search-container">
           <input
             type="text"
             id="search-input"
             placeholder="Search by title or location…"
+            data-i18n-placeholder="searchPlaceholder"
           />
         </div>
 
-        <!-- slider control to select maximum price level -->
+        <!-- price slider -->
         <div class="slider-container">
-          <label for="price-range">Price:</label>
+          <label for="price-range" data-i18n="priceLabel">Price:</label>
           <input
             type="range"
             id="price-range"
@@ -71,20 +77,38 @@
           <span id="price-value">5</span>
         </div>
 
-        <!-- container where menu items will be injected -->
+        <!-- where menu items appear -->
         <div class="section-center"></div>
       </section>
 
       <footer class="section">
         <p>
           copyright &copy; Izmir’s waiting. I’ve sharpened my claws — and my
-          opinions.
-          <span id="date"></span>. all rights reserved Let’s go, hooman.
+          opinions. <span id="date"></span>. all rights reserved Let’s go,
+          hooman.
         </p>
       </footer>
     </div>
 
-    <!-- main script to fetch data, handle filters, search, slider and render UI -->
+   
+    <!-- translations dictionary -->
+    <script src="translations.js"></script>
+    <!-- i18n logic (defines setLanguage) -->
+    <script src="i18n.js"></script>
+    <!-- initialize language on load -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const langSelect = document.getElementById("lang-select");
+        const saved = localStorage.getItem("lang") || "tr";
+        langSelect.value = saved;
+        setLanguage(saved);
+        langSelect.addEventListener("change", (e) => {
+          localStorage.setItem("lang", e.target.value);
+          setLanguage(e.target.value);
+        });
+      });
+    </script>
+    <!-- main app logic -->
     <script src="eatdrinks.js"></script>
   </body>
 </html>
