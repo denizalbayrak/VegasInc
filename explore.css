@@ -1,0 +1,237 @@
+.title{
+  padding: 1rem  ;
+}
+body .explore-page-container {
+    background-color: hsla(120, 100%, 100%, 0.915);
+  }
+  .explore-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .explore-page-container footer.section {
+    margin-top: auto;
+  }
+  
+  .section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  /* Categories */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .category-card {
+    background: #fff9e1;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: center;
+  }
+  
+  .category-card h2 {
+    font-size: 1.4rem;
+    color: #a1582b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-card button {
+    background-color: #5eb1bf;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .category-card button:hover {
+    background-color: #387c8b;
+  }
+  
+  .weekly-pick {
+    background-color: #e3f6f5;
+    padding: 2rem;
+    border-radius: 1px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .weekly-pick  .section-center {
+    display: block;
+    text-align: center;
+  }
+ 
+  .weekly-pick h2 {
+    font-size: 1.5rem;
+    color: #2a1c01;
+    margin-bottom: 1rem;
+  }
+  .weekly-pick .pick-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  .weekly-pick .pick-desc {
+    font-size: 1rem;
+    color: #555;
+  }
+  .weekly-pick h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .weekly-pick p {
+    color: #5a5a5a;
+  }
+  
+  .izmir-slider {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .izmir-slider h2 {
+    font-size: 2rem;
+    color: #2a1c01;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Daha büyük görünüm için yüksekliği artır */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* KESMEDEN DOLDUR */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 8px;
+  }
+  
+  .slider-btn.left {
+    left: 15px;
+  }
+  .slider-btn.right {
+    right: 15px;
+  }
+  
+  .slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /* Map Section */
+  .izmir-map {
+    margin: 3rem 0;
+  }
+  
+  .izmir-map h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #2a1c01;
+  }
+ 
+  .btn.active {
+    background: var(--clr-primary);
+    color: #fff;
+  }
+  /* Kategoriye özel arka planlar */
+.explore-category[data-cat="Hidden Spots"] {
+  background-color: #f3f0e7;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+.explore-category[data-cat="History & Culture"] {
+  background-color: #f0f8ff;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+.explore-category[data-cat="Sea & Sun"] {
+  background-color: #e6f5f3;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+
+.explore-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 1rem;
+}
+
+.item-info h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.item-location,
+.price {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+.item-text {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}

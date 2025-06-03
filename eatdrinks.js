@@ -8,14 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let menuData    = [];
   let currentLang = localStorage.getItem("lang") || "tr";
 
-  // --- DİL DEĞİŞİMİ: Butonlar üzerinden ---
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       currentLang = btn.getAttribute('data-lang');
       localStorage.setItem('lang', currentLang);
-      // Sayfa statik metinleri güncelle (i18n.js zaten var)
       setLanguage(currentLang);
-      // Menü açıklamalarını da güncelle
       applyFilters();
     });
   });

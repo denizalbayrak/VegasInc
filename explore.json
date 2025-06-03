@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Atatürk Müzesi",
+    "location": "Alsancak",
+    "price": "$",
+    "category": "History & Culture",
+    "desc_tr": "İzmir'deki Atatürk'ün evi.",
+    "desc_en": "Discover Atatürk’s residence in İzmir.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Dis_mekan.jpg/1200px-Dis_mekan.jpg"
+  },
+  {
+    "title": "Mersinaki Plajı",
+    "location": "Foça",
+    "price": "$",
+    "category": "Sea & Sun",
+    "desc_tr": "Tertemiz ücretsiz bir koy.",
+    "desc_en": "A spotlessly clean, free bay.",
+    "img": "https://wowturkey.net/dosyalar/mersinaki-plaji-1-jpg.43241/"
+  },
+  {
+    "title": "Hasan Tahsin Heykeli",
+    "location": "Konak",
+    "price": "$",
+    "category": "Hidden Spots",
+    "desc_tr": "Hasan Tahsin'in ilk kurşunu attığı nokta.",
+    "desc_en": "The point where Hasan Tahsin fired the first bullet.",
+    "img": "https://visitizmiryonetim.izmir.bel.tr/YuklenenDosyalar/DestinasyonFotograflari/1024/09042021_025035723_2_01-1.jpg.JPG"
+  },
+  {
+    "title": "Asansör",
+    "location": "Konak",
+    "price": "$",
+    "category": "History & Culture",
+    "desc_tr": "İzmir’in en ikonik manzarasına çıkan asansör!",
+    "desc_en": "The elevator that leads to the most iconic view of Izmir!",
+    "img": "https://visitizmiryonetim.izmir.bel.tr/YuklenenDosyalar/DestinasyonFotograflari/1024/25042021232008899.jpg"
+  },
+  {
+    "title": "Arkas Sanat Merkezi",
+    "location": "Alsancak",
+    "price": "$",
+    "category": "Hidden Spots",
+    "desc_tr": "Etkileyici sergilere ev sahipliği yapan tarihi bir sanat evidir.",
+    "desc_en": "It is a historical art house that hosts impressive exhibitions.",
+    "img": "https://arkassanatmerkezi.com/wp-content/uploads/2022/01/2.jpg"
+  },
+  {
+    "title": "Ekmeksiz Plajı",
+    "location": "Seferihisar",
+    "price": "$",
+    "category": "Sea & Sun",
+    "desc_tr": "Doğayla iç içe, sakin ve turkuaz deniziyle ünlü bir koydur.",
+    "desc_en": "It is a bay surrounded by nature and famous for its calm and turquoise sea.",
+    "img": "https://www.kampyerleri.org/wp-content/uploads/2023/03/ekmeksiz-plaji-ozellikleri-ekmeksiz-tabiat-parki-ozellikleri.jpg"
+  }
+]
