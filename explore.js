@@ -44,7 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   loadExploreData();
-
+  function getCategoryLabel(key) {
+    const labels = {
+      "Hidden Spots": {
+        en: "📸 Hidden Spots",
+        tr: "📸 Gizli Noktalar"
+      },
+      "History & Culture": {
+        en: "🏛️ History & Culture",
+        tr: "🏛️ Tarih & Kültür"
+      },
+      "Sea & Sun": {
+        en: "🌊 Sea & Sun",
+        tr: "🌊 Deniz & Güneş"
+      }
+    };
+    return labels[key] ? labels[key][currentLang] || key : key;
+  }
   function loadExploreData() {
     fetch("explore.json")
       .then(res => res.json())
@@ -57,23 +73,23 @@ document.addEventListener("DOMContentLoaded", () => {
           const catItems = data.filter(item => item.category === cat);
           if (catItems.length) {
             html += `
-              <section class="explore-category" data-cat="${cat}">
-                <h2>${cat}</h2>
-                <div class="explore-items">
-                  ${catItems.map(item => `
-                    <article class="menu-item">
-                      <img src="${item.img}" class="photo" alt="${item.title}" />
-                      <div class="item-info">
-                        <h4>${item.title}</h4>
-                        <p class="item-location">${item.location}</p>
-                        <p class="price">${item.price}</p>
-                        <p class="item-text">${item[descKey]}</p>
-                      </div>
-                    </article>
-                  `).join("")}
-                </div>
-              </section>
-            `;
+            <section class="explore-category" data-cat="${cat}">
+              <h2>${getCategoryLabel(cat)}</h2>
+              <div class="explore-items">
+                ${catItems.map(item => `
+                  <article class="menu-item">
+                    <img src="${item.img}" class="photo" alt="${item.title}" />
+                    <div class="item-info">
+                      <h4>${item.title}</h4>
+                      <p class="item-location">${item.location}</p>
+                      <p class="price">${item.price}</p>
+                      <p class="item-text">${item[descKey]}</p>
+                    </div>
+                  </article>
+                `).join("")}
+              </div>
+            </section>
+          `;
           }
         });
   

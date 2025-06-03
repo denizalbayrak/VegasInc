@@ -47,6 +47,17 @@ const translations = {
     weeklyTitle: "Vegas’ Weekly Pick ✨",
     photoTourTitle: "Vegas's Photo Tour 📷",
     mapTitle: "Explore İzmir 🗺️",
+    catHidden: "📸 Hidden Spots",
+    catHiddenText: "Discover the city's lesser-known, Instagram-worthy locations.",
+    catHiddenBtn: "Find Hidden Gems",
+  
+    catSea: "🌊 Sea & Sun",
+    catSeaText: "The best beaches and sunset spots personally tested by yours truly.",
+    catSeaBtn: "Dive In",
+  
+    catHistory: "🏛️ History & Culture",
+    catHistoryText: "From ancient ruins to vibrant local culture, explore İzmir's rich heritage.",
+    catHistoryBtn: "Go Back in Time",
   },
   tr: {
     siteTitle: "VEGAS INC",
@@ -95,5 +106,17 @@ const translations = {
     weeklyTitle: "Vegas’in Haftalık Seçimi ✨",
     photoTourTitle: "Vegas'ın Fotoğraf Turu 📷",
     mapTitle: "İzmir’i Keşfet 🗺️",
+    catHidden: "📸 Gizli Noktalar",
+  catHiddenText: "Şehrin az bilinen, Instagram’a layık yerlerini keşfet.",
+  catHiddenBtn: "Gizli Cevherleri Bul",
+
+  catSea: "🌊 Deniz & Güneş",
+  catSeaText: "En güzel plajlar ve gün batımı noktaları, Vegas onaylı.",
+  catSeaBtn: "Dalgaya Kapıl",
+
+  catHistory: "🏛️ Tarih & Kültür",
+  catHistoryText: "Antik kalıntılardan yerel kültüre, İzmir'in tarihini keşfet.",
+  catHistoryBtn: "Zamana Yolculuk",
+
   },
 };
